@@ -1,0 +1,5 @@
+library(ahp)
+ahpFile <- system.file("extdata", "pralkalab4.ahp", package="ahp")
+pralkaAhp <- Load(ahpFile)
+Calculate(pralkaAhp)
+AnalyzeTable(pralkaAhp, decisionMaker = "Dad")
